@@ -1,16 +1,34 @@
-.contenedor{
+@media (min-width: 768px) {
+  .contenedor {
     position: relative;
     display: inline-block;
     text-align: center;
-}
+  }
 
-.centradoderecha{
+  .cderecha {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .oscurecer-img {
+    filter: brightness(50%);
+  }
 }
 
-.oscurecer-img{
-    filter: brightness(50%)
+@media (max-width: 767px) {
+  .contenedor {
+    background-color: #293035;}
+  div>span{
+        text-align: center;
+        }
+    }
+  
+  
+  .margenp {
+    padding-top: 3rem !important;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
   }
+
