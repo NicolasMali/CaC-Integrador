@@ -17,14 +17,33 @@
   }
 }
 
+  .ccentro {
+    text-align: center;
+  }
+
+.tlight {
+  font-weight: 400!important;
+  text-transform: uppercase;
+}
+
+.toradores {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;}
+
+
+
+
 @media (max-width: 767px) {
   .contenedor {
-    background-color: #293035;}
+    background-color: #293035;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;}
   div>span{
         text-align: center;
         }
     }
-  
+
   
   .margenp {
     padding-top: 3rem !important;
