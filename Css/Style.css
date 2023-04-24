@@ -1,5 +1,41 @@
-body{
+body {
   overflow-x: hidden;
+}
+
+.ccentro {
+  text-align: center;
+}
+
+.tlight {
+  font-weight: 400 !important;
+  text-transform: uppercase;
+}
+
+.toradores {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+.contenedor2 {
+  background-color: #293035;
+}
+
+.subpunto {
+  border-bottom: 1px dotted;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+.h1404 {
+  font-size: 8rem;
+}
+
+.h4404 {
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {
@@ -21,47 +57,19 @@ body{
   }
 }
 
-  .ccentro {
-    text-align: center;
-  }
-
-.tlight {
-  font-weight: 400!important;
-  text-transform: uppercase;
-}
-
-.toradores {
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;}
-
-.contenedor2 {
-  background-color: #293035;
-}
-
-.subpunto {
-  border-bottom:1px dotted;
-}
-
-a:link, a:visited {
-  text-decoration: none;
-}
-
-
 @media (max-width: 767px) {
   .contenedor {
     background-color: #293035;
     margin-bottom: 1rem;
-    padding-bottom: 1rem;}
-  div>span{
-        text-align: center;
-        }
-    }
-
-  
-  .margenp {
-    padding-top: 3rem !important;
-    padding-right: 1rem !important;
-    padding-left: 1rem !important;
+    padding-bottom: 1rem;
   }
+  div > span {
+    text-align: center;
+  }
+}
 
+.margenp {
+  padding-top: 3rem !important;
+  padding-right: 1rem !important;
+  padding-left: 1rem !important;
+}

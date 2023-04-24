@@ -14,7 +14,48 @@
     <title>Integrador Java</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-none d-lg-block " data-bs-theme="dark"> 
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img
+            src="Img/codoacodo.png"
+            alt="Codo a Codo Logo"
+            width="90"
+            class="img-fluid"
+          />
+          <span class=""> Conf Bs As </span>
+        </a>
+
+        <div
+          class="justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <div class="px-4">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#conferenciapag"
+                  >La conferencia</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#oradorespag">Los oradores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#lugarpag">El Lugar y la fecha</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#anotatepag">Conviértete en orador</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-success" href="404.html" target="_blank">Comprar tickets</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-topd-block d-lg-none sticky-top" data-bs-theme="dark"> 
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
           <img
@@ -43,21 +84,21 @@
           <div class="px-4">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
+                <a class="nav-link active" aria-current="page" href="#conferenciapag"
                   >La conferencia</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Los oradores</a>
+                <a class="nav-link" href="#oradorespag">Los oradores</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">El Lugar y la fecha</a>
+                <a class="nav-link" href="#lugarpag">El Lugar y la fecha</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Conviértete en orador</a>
+                <a class="nav-link" href="#anotatepag">Conviértete en orador</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-success" href="#">Comprar tickets</a>
+                <a class="nav-link text-success" href="404.html" target="_blank">Comprar tickets</a>
               </li>
             </ul>
           </div>
@@ -65,7 +106,7 @@
       </div>
     </nav>
 
-    <div class="contenedor">
+    <div class="contenedor" id="conferenciapag">
       <div
         id="carouselExampleSlidesOnly"
         class="carousel slide"
@@ -76,21 +117,21 @@
             <img
               src="Img/ba1.jpg"
               class="d-block w-100 oscurecer-img"
-              alt="..."
+              alt="Paisaje urbano de Bueno Aires"
             />
           </div>
           <div class="carousel-item" data-bs-interval="7000">
             <img
               src="Img/ba2.jpg"
               class="d-block w-100 oscurecer-img"
-              alt="..."
+              alt="Paisaje urbano de Bueno Aires"
             />
           </div>
           <div class="carousel-item" data-bs-interval="7000">
             <img
               src="Img/ba3.jpg"
               class="d-block w-100 oscurecer-img"
-              alt="..."
+              alt="Paisaje urbano de Bueno Aires"
             />
           </div>
         </div>
@@ -109,9 +150,9 @@
             </p>
             <p>¡Te esperamos!</p>
             <div class="container-fluid p-0">
-              <a class="btn btn-success float-end ms-2 mb-2">Comprar tickets</a>
+              <a class="btn btn-success float-end ms-2 mb-2" href="404.html" target="_blank">Comprar tickets</a>
               <a
-                href="#anotarse"
+                href="#anotatepag"
                 class="bg-dark bg-opacity-75 btn btn-outline-light float-end"
                 >Quiero ser orador</a
               >
@@ -121,7 +162,7 @@
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="oradorespag">
       <h5 class="ccentro tlight">conoce a los</h5>
       <h2 class="ccentro toradores">oradores</h2>
     </div>
@@ -133,17 +174,17 @@
             class="img-fluid rounded"
             width="645px"
             src="Img/steve.jpg"
-            alt=""
+            alt="Retrato de Steve Jobs"
           />
           <div>
             <a
               class="bg-warning text-black rounded px-2"
-              href=""
+              href="404.html"
               >JavaScript</a
             >
             <a
               class="bg-primary text-white rounded px-2"
-              href=""
+              href="404.html"
               >React</a
             >
             <h4>Steve Jobs</h4>
@@ -157,16 +198,16 @@
         </div>
 
         <div class="col-12 col-md-4 px-4 p-3 border">
-          <img class="img-fluid rounded" src="Img/bill.jpg" alt="" />
+          <img class="img-fluid rounded" src="Img/bill.jpg" alt="Retrato de Bill Gates" />
           <div>
             <a
               class="bg-warning text-black rounded px-2"
-              href=""
+              href="404.html"
               >JavaScript</a
             >
             <a
               class="bg-primary text-white rounded px-2"
-              href=""
+              href="404.html"
               >React</a
             >
             <h4>Bill Gates</h4>
@@ -180,16 +221,16 @@
         </div>
 
         <div class="col-12 col-md-4 px-4 p-3 border">
-          <img class="img-fluid rounded" src="Img/ada.jpeg" alt="" />
+          <img class="img-fluid rounded" src="Img/ada.jpeg" alt="Retrato de Ada Lovelace" />
           <div>
             <a
               class="bg-secondary text-white rounded px-2"
-              href=""
+              href="404.html"
               >Negocios</a
             >
             <a
               class="bg-danger text-white rounded px-2"
-              href=""
+              href="404.html"
               >Startups</a
             >
             <h4>Ada Lovelace</h4>
@@ -206,8 +247,8 @@
 
   </br>
 
-    <div class="container-fluid contenedor2 m-0 p-0 mb-4 row">
-      <img src="Img/honolulu.jpg" class="img-fluid col-12 col-md-6 p-0">
+    <div class="container-fluid contenedor2 m-0 p-0 mb-4 row" id="lugarpag">
+      <img src="Img/honolulu.jpg" class="img-fluid col-12 col-md-6 p-0" alt="Paisaje de ciudad de Honolulu">
       <div class="p-4 text-white  col-12 col-md-6 m-0">
         
           <h3>Bs As - Octubre</h3>
@@ -215,14 +256,14 @@
             Buenos Aires es la provincia y localidad más grande del estado de Argentina. En los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km2 de superficie).
           </p>
           <div class="container-fluid p-0">
-            <a class="bg-dark bg-opacity-75 btn btn-outline-light">Conocé más</a>
+            <a class="bg-dark bg-opacity-75 btn btn-outline-light" href="404.html">Conocé más</a>
 
           </div>
         
       </div>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid" id="anotatepag">
       <h5 class="ccentro tlight">conviértete en un</h5>
       <h2 class="ccentro toradores">orador</h2>
       <p class="mb-4 ccentro"> Anótate como orador para dar una <span class="subpunto">charla ignite.</span> ¡Cuéntanos de qué quieres hablar!</p>
@@ -254,15 +295,15 @@
       </div>
   </div>
 
-  <div class="container-fluid contenedor2 p-1">
-     <ul class="row pt-4">
-      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="">Preguntas frecuentes</a>
-      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="">Contáctanos</a>
-      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="">Prensa</a>
-      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="">Conferencias</a>
-      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="">Términos y condiciones</a>
-      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="">Privacidad</a>
-      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="">Estudiantes</a>
+  <div class="container-fluid contenedor2 p-1 ">
+     <ul class="row pt-3">
+      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="404.html">Preguntas frecuentes</a>
+      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="404.html">Contáctanos</a>
+      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="404.html">Prensa</a>
+      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="404.html">Conferencias</a>
+      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="404.html">Términos y condiciones</a>
+      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="404.html">Privacidad</a>
+      <a class="col-6 col-md-1 mx-auto text-white text-center mb-3  " href="404.html">Estudiantes</a>
      </ul>
   </div>
   
