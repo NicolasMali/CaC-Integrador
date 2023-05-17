@@ -16,12 +16,12 @@ function handleSelectChange() {
 
 categoria.addEventListener("change", handleSelectChange);
 
-const form = document.getElementById('descuentoForm');
-const resultado = document.getElementById('resultado');
+const form = document.getElementById("descuentoForm");
+const resultado = document.getElementById("resultado");
 
-form.addEventListener('submit', function(event) {
+form.addEventListener("submit", function(event) {
   event.preventDefault();
-  var cant = parseFloat(document.getElementById('cantidad').value)
+  var cant = parseFloat(document.getElementById("cantidad").value)
 
   if (isNaN(cant) || cant < 1) {
     resultado.innerHTML = "Ingresa una cantidad válida.";
@@ -33,5 +33,5 @@ form.addEventListener('submit', function(event) {
   var descuento = valorTotalEntrada * (porcentaje / 100);
   var precioConDescuento = valorTotalEntrada - descuento;
 
-  resultado.innerHTML = precioConDescuento;
+  resultado.innerHTML = "$" + precioConDescuento;
 })
